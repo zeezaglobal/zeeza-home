@@ -41,10 +41,13 @@ jobs:
         cd ..
         ls
 
-    - name: Deploy to EC2 and restart Nginx
+   - name: Deploy to EC2 and restart Nginx
       run: |
-        # Copy the downloaded build directory to the EC2 instance directory
-        sudo mv -f /home/ec2-user/actions-runner/_work/zeeza-home/zeeza-home/* /var/www/vhosts/zeezahome/build/
+        # Remove the existing build directory contents before moving new files
+        sudo rm -rf /var/www/vhosts/zeezahome/build/*
+        
+        # Copy the downloaded build directory to the EC2 instance directory with overwrite
+        sudo mv /home/ec2-user/actions-runner/_work/zeeza-home/zeeza-home/* /var/www/vhosts/zeezahome/build/
         
         # Restart Nginx
         sudo systemctl restart nginx
