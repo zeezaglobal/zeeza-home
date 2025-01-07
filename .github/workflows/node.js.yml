@@ -15,12 +15,16 @@ jobs:
     - name: Install dependencies and build the project
       run: |
         npm install
-        npm run build --if-present
+       
+    - name: Build
+      run: |
+        npm run build
+    
 
     - name: Deploy to EC2 and restart Nginx
       run: |
         # Copy the build directory to the EC2 instance directory
-        cp -r ./build /var/www/vhosts/zeezahome/
+        sudo cp -r ./build /var/www/vhosts/zeezahome/
         
         # Restart Nginx
         sudo systemctl restart nginx
