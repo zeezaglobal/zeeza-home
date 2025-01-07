@@ -35,12 +35,14 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: build  # Match the artifact name from the build job
+
     - name: List build directory contents
-        run: ls 
-    - name: Deploy to EC2 and restart Nginx
-      run: |
-        # Copy the downloaded build directory to the EC2 instance directory
-        sudo cp -r ./build /var/www/vhosts/zeezahome/
+      run: ls
+
+   # - name: Deploy to EC2 and restart Nginx
+   #   run: |
+   #    # Copy the downloaded build directory to the EC2 instance directory
+    #    sudo cp -r ./build /var/www/vhosts/zeezahome/
         
         # Restart Nginx
-        sudo systemctl restart nginx
+    #    sudo systemctl restart nginx
