@@ -35,10 +35,11 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: build  # Match the artifact name from the build job
-    - name: List
-      run: cd ..
+  
     - name: List build directory contents
-      run: ls
+      run: |
+      cd ..
+      ls
 
    # - name: Deploy to EC2 and restart Nginx
    #   run: |
