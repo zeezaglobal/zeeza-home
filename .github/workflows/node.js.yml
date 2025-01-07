@@ -41,7 +41,7 @@ jobs:
         cd ..
         ls
 
-   - name: Deploy to EC2 and restart Nginx
+    - name: Deploy to EC2 and restart Nginx
       run: |
         # Remove the existing build directory contents before moving new files
         sudo rm -rf /var/www/vhosts/zeezahome/build/*
