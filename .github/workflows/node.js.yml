@@ -23,7 +23,7 @@ jobs:
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
-        name: build-folder
+        name: build
         path: build  # Upload the 'build' directory
 
   deploy:
@@ -34,7 +34,7 @@ jobs:
     - name: Download build artifact
       uses: actions/download-artifact@v3
       with:
-        name: build-folder  # Match the artifact name from the build job
+        name: build  # Match the artifact name from the build job
 
     - name: Deploy to EC2 and restart Nginx
       run: |
