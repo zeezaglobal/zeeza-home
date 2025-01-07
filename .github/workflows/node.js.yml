@@ -1,32 +1,44 @@
-name: Node.js CI and Deploy
+name: CI and Deploy
 
 on:
   push:
-    branches: [ "master" ]  # Trigger the workflow on push to the master branch
+    branches: [ "master" ]
 
 jobs:
-  build-and-deploy:
-    runs-on: self-hosted  # Use your self-hosted runner
+  build:
+    runs-on: ubuntu-latest  # Build on an Ubuntu runner
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Cache Node.js modules
-      uses: actions/cache@v3
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node_modules-${{ hashFiles('package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node_modules-
+    - name: Install dependencies
+      run: |
+        npm ci  # Clean install dependencies
 
-    - name: Build
+    - name: Build the project
       run: |
         npm run build
 
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-folder
+        path: build  # Upload the 'build' directory
+
+  deploy:
+    runs-on: self-hosted  # Deploy on your self-hosted runner
+    needs: build  # Ensure the build job completes first
+
+    steps:
+    - name: Download build artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: build-folder  # Match the artifact name from the build job
+
     - name: Deploy to EC2 and restart Nginx
       run: |
-        # Copy the build directory to the EC2 instance directory
+        # Copy the downloaded build directory to the EC2 instance directory
         sudo cp -r ./build /var/www/vhosts/zeezahome/
         
         # Restart Nginx
