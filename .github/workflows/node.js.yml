@@ -12,14 +12,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install dependencies and build the project
-      run: |
-        npm install
-       
     - name: Build
       run: |
         npm run build
-    
 
     - name: Deploy to EC2 and restart Nginx
       run: |
