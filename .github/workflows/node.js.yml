@@ -38,8 +38,8 @@ jobs:
   
     - name: List build directory contents
       run: |
-      cd ..
-      ls
+        cd ..
+        ls
 
    # - name: Deploy to EC2 and restart Nginx
    #   run: |
