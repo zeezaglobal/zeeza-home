@@ -1,53 +1,24 @@
-name: CI and Deploy
+name: ESLint Check  
 
-on:
-  push:
-    branches: [ "master" ]
+on:  
+  push:  
+    branches: [ "master" ]  
 
-jobs:
-  build:
-    runs-on: ubuntu-latest  # Build on an Ubuntu runner
+jobs:  
+  lint:  
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner  
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+    steps:  
+      # Step 1: Checkout repository  
+      - name: Checkout repository  
+        uses: actions/checkout@v4  
 
-    - name: Install dependencies
-      run: |
-        npm install  # Clean install dependencies
+      # Step 2: Install dependencies  
+      - name: Install dependencies  
+        run: |  
+          npm install  # Clean install dependencies  
 
-    - name: Build the project
-      run: |
-        npm run build
-
-    - name: Upload build artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: build
-        path: build  # Upload the 'build' directory
-
-  deploy:
-    runs-on: self-hosted  # Deploy on your self-hosted runner
-    needs: build  # Ensure the build job completes first
-
-    steps:
-    - name: Download build artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: build  # Match the artifact name from the build job
-  
-    - name: List build directory contents
-      run: |
-        cd ..
-        ls
-
-    - name: Deploy to EC2 and restart Nginx
-      run: |
-        # Remove the existing build directory contents before moving new files
-        sudo rm -rf /var/www/vhosts/zeezahome/build/*
-        
-        # Copy the downloaded build directory to the EC2 instance directory with overwrite
-        sudo mv /home/ec2-user/actions-runner/_work/zeeza-home/zeeza-home/* /var/www/vhosts/zeezahome/build/
-        
-        # Restart Nginx
-        sudo systemctl restart nginx
+      # Step 3: Run ESLint  
+      - name: Run ESLint  
+        run: |  
+          npm run lint  
