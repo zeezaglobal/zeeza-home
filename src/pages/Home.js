@@ -17,7 +17,7 @@ const Home = () => {
       <h2 className="textButton">Contact Us<i className="fas fa-arrow-right"></i></h2>
       </div>
 
-      {/* Right Section */}
+      
       <div className="right-section">
         <div className="card">Card 1 Content</div>
         <div className="card">Card 2 Content</div>
