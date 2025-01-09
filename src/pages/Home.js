@@ -19,9 +19,11 @@ const Home = () => {
 
       
       <div className="right-section">
-        <div className="card">Card 1 Content</div>
-        <div className="card">Card 2 Content</div>
-        <div className="card">Card 3 Content</div>
+        <div className="card one">Card 1 Content</div>
+        <div className="card two">
+            <h1 className="zeezaHeading">ZeezaGlobal</h1>
+            </div>
+        <div className="card three">Card 3 Content</div>
       </div>
     </div>
   );
