@@ -14,16 +14,16 @@ const Home = () => {
           Ready to transform your vision into reality? Let’s create something
           extraordinary together!
         </p>
-      <h2 className="textButton">Contact Us<i className="fas fa-arrow-right"></i></h2>
+      <h2 >Contact Us on info@zeezaglobal.com<i className="fas fa-arrow-right"></i></h2>
       </div>
 
       
       <div className="right-section">
-        <div className="card one">Card 1 Content</div>
+        <div className="card one"></div>
         <div className="card two">
             <h1 className="zeezaHeading">ZeezaGlobal</h1>
             </div>
-        <div className="card three">Card 3 Content</div>
+        <div className="card three"></div>
       </div>
     </div>
   );
