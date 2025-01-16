@@ -1,31 +1,43 @@
-import React from "react";
-import "./Home.css"; // Make sure to create a CSS file for styling
-import logo from "../img/zeeza-icon.png";
+import Footer3 from "../components/footers/Footer3";
+import Header3 from "../components/headers/Header3";
+import Home3 from "../components/homes/home-3";
+import Hero1 from "../components/homes/home-3/heros/Hero1";
+import { brutalistOnepage } from "../data/menu";
+import sectionBg from "../assets/images/demo-brutalist/section-bg-1.jpg"; 
+
+import ParallaxContainer from "../components/common/ParallaxContainer";
+
+
 const Home = () => {
   return (
-    <div className="home-container">
-      {/* Left Section */}
-      <div className="left-section">
-        <img src={logo} alt="Logo" className="logo" />
-        <h1 className="heading">
-          Custom Software <br /> Solution
-        </h1>
-        <p className="subtext">
-          Ready to transform your vision into reality? Let’s create something
-          extraordinary together!
-        </p>
-      <h2 >Contact Us on info@zeezaglobal.com<i className="fas fa-arrow-right"></i></h2>
-      </div>
-
+    <>
+    
+      <div className="theme-brutalist">
+        <div className="page" id="top">
+          <nav className="main-nav dark transparent stick-fixed wow-menubar">
+            <Header3 links={brutalistOnepage} />
+          </nav>
+          <main id="main">
+            <ParallaxContainer
+              className="home-section parallax-5 light-content scrollSpysection"
+              style={{
+                backgroundImage: `url(${sectionBg})`, // Use the imported image
+              }}
+           
       
-      <div className="right-section">
-        <div className="card one"></div>
-        <div className="card two">
-            <h1 className="zeezaHeading">ZeezaGlobal</h1>
-            </div>
-        <div className="card three"></div>
+              id="home"
+            >
+              <Hero1 />
+            </ParallaxContainer>
+
+            <Home3 onePage />
+          </main>
+          <footer className="page-section footer-1 bg-dark-1 light-content">
+            <Footer3 />
+          </footer>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
