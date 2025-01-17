@@ -7,10 +7,8 @@ export default function Footer3() {
       <div className="row">
         {/* Copyright */}
         <div className="col-lg-3 text-center text-lg-start mb-md-50">
-          <div>© Resonance {new Date().getFullYear()}.</div>
-          <div className="small">
-            Made with love for <i>great people</i>.
-          </div>
+          <div>© Zeezaglobal {new Date().getFullYear()}.</div>
+         
         </div>
         {/* End Copyright */}
         {/* Social Links */}

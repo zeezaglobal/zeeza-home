@@ -5,7 +5,7 @@ export default function ContactDark() {
         <div className="contact-1-left bg-dark-3 border-dark light-content">
           <div className="p-4 p-md-5">
             <h3 className="contact-1-title">Call Us</h3>
-            <div className="contact-1-text">+1 837 652 8800</div>
+            <div className="contact-1-text">+1 519 981 5571</div>
             <div className="contact-1-link">
               {/* Change the phone number in the "href" attribute */}
               <a href="tel:+18376528800">Call now</a>
@@ -14,7 +14,7 @@ export default function ContactDark() {
           <hr className="contact-1-line mt-0 mb-0" />
           <div className="p-4 p-md-5">
             <h3 className="contact-1-title">Address</h3>
-            <div className="contact-1-text mb-10">245 Quigley Blvd, Ste K</div>
+            <div className="contact-1-text mb-10">Winnipeg, Manitoba</div>
             <div className="contact-1-link">
               <a href="#">See map</a>
             </div>
@@ -23,7 +23,7 @@ export default function ContactDark() {
           <div className="p-4 p-md-5">
             <h3 className="contact-1-title">Email</h3>
             <div className="contact-1-text text-break mb-10">
-              elitethemes24@gmail.com
+              support@zeezaglobal.ca
             </div>
             <div className="contact-1-link">
               {/* Change the email address in the "href" attribute */}

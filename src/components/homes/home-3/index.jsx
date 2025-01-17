@@ -12,7 +12,8 @@ import ContactDark from "./ContactDark";
 import { qualities } from "../../../data/features";
 import sectionImage from "../../../assets/images/demo-brutalist/section-image-1.jpg";
 import sectionBg2 from "../../../assets/images/demo-brutalist/section-bg-2.jpg";
-
+import sectionBg3 from "../../../assets/images/demo-brutalist/section-bg-3.jpg";
+import shape1 from "../../../assets/images/demo-brutalist/shape-1.svg"
 
 
 import AnimatedText from "../../../components/common/AnimatedText";
@@ -60,7 +61,7 @@ With free demos, flexible pricing, and a satisfaction guarantee, we make it easy
           >
             <div className="col-5 offset-7 col-sm-4 offset-sm-8">
               <img
-                src={sectionImage}
+               src={sectionImage}
                 width={689}
                 height={855}
                 className="section-image-1"
@@ -124,7 +125,7 @@ With free demos, flexible pricing, and a satisfaction guarantee, we make it easy
                   data-wow-delay="0.6s"
                 >
                   <img
-                    src="/assets/images/demo-brutalist/shape-1.svg"
+                    src={shape1}
                     width={35}
                     height={35}
                     alt=""
@@ -147,23 +148,7 @@ With free demos, flexible pricing, and a satisfaction guarantee, we make it easy
                     className="link-hover-anim align-middle"
                     data-link-animate="y"
                   >
-                    <span className="link-strong link-strong-unhovered">
-                      Get in touch{" "}
-                      <i
-                        className="icon-arrow-right size-14"
-                        aria-hidden="true"
-                      ></i>
-                    </span>
-                    <span
-                      className="link-strong link-strong-hovered"
-                      aria-hidden="true"
-                    >
-                      Get in touch{" "}
-                      <i
-                        className="icon-arrow-right size-14"
-                        aria-hidden="true"
-                      ></i>
-                    </span>
+                  
                   </a>
                 </>
               ) : (
@@ -201,14 +186,7 @@ With free demos, flexible pricing, and a satisfaction guarantee, we make it easy
           {/* End Portfolio Grid */}
         </div>
       </section>
-      <section
-        className={`page-section   scrollSpysection  ${
-          dark ? "bg-dark-2 light-content" : "bg-gray-light-2"
-        } `}
-        id="blog"
-      >
-        <Blog />
-      </section>
+   
       <section
         className={`small-section   ${
           dark
@@ -217,7 +195,7 @@ With free demos, flexible pricing, and a satisfaction guarantee, we make it easy
         } bg-scroll`}
         style={{
           backgroundImage:
-            "url(/assets/images/demo-brutalist/section-bg-3.jpg)",
+            {sectionBg3},
         }}
       >
         <div

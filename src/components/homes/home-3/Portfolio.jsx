@@ -45,23 +45,7 @@ export default function Portfolio() {
                         className="link-hover-anim link-circle align-middle"
                         data-link-animate="y"
                       >
-                        <span className="link-strong link-strong-unhovered">
-                          See more{" "}
-                          <i
-                            className="icon-arrow-right size-14"
-                            aria-hidden="true"
-                          ></i>
-                        </span>
-                        <span
-                          className="link-strong link-strong-hovered"
-                          aria-hidden="true"
-                        >
-                          See more{" "}
-                          <i
-                            className="icon-arrow-right size-14"
-                            aria-hidden="true"
-                          ></i>
-                        </span>
+                    
                       </Link>
                     </div>
                   </div>
@@ -91,23 +75,7 @@ export default function Portfolio() {
                       className="link-hover-anim link-circle align-middle"
                       data-link-animate="y"
                     >
-                      <span className="link-strong link-strong-unhovered">
-                        See more{" "}
-                        <i
-                          className="icon-arrow-right size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <span
-                        className="link-strong link-strong-hovered"
-                        aria-hidden="true"
-                      >
-                        See more{" "}
-                        <i
-                          className="icon-arrow-right size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
+                    
                     </Link>
                   </div>
                 </div>

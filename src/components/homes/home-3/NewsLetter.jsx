@@ -7,7 +7,7 @@ export default function NewsLetter() {
             <div className="row">
               <div className="col-lg-9 col-xl-6">
                 <h2 className="section-title-small font-alt mb-40 mb-md-20">
-                  Stay informed with our newsletter.
+                  Enter Email to get a free Demo.
                 </h2>
               </div>
             </div>
@@ -30,7 +30,7 @@ export default function NewsLetter() {
                   aria-controls="subscribe-result"
                   className="newsletter-button btn btn-mod btn-large btn-circle btn-hover-anim"
                 >
-                  <span>Subscribe Now</span>
+                  <span>Book Demo</span>
                 </button>
               </div>
               <div className="form-tip">
