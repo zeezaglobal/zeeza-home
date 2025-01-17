@@ -1,33 +1,40 @@
+import serviceImage1 from '../assets/images/demo-brutalist/services/1.jpg';
+
+import serviceImage2 from '../assets/images/demo-brutalist/services/2.jpg';
+import serviceImage3 from '../assets/images/demo-brutalist/services/3.jpg';
+import serviceImage4 from '../assets/images/demo-brutalist/services/4.jpg';
+
 export const services = [
   {
     number: "01",
     title: "Branding",
-    image: "/assets/images/demo-brutalist/services/1.jpg",
+    image: serviceImage1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis urna ligula. Nam convallis nunc in felis mattis, a sollicitudin ligula molestie. Donec tincidunt eu lorem eget varius. Vestibulum ac efficitur ante. Aenean accumsan, justo vel placerat fermentum, elit neque lobortis velit, a varius nibh lorem in tellus.",
+      "We create distinctive and memorable brand identities that resonate with your target audience, fostering trust and engagement. From logo design to brand strategy, we ensure consistency across all platforms and touchpoints, helping your business stand out in a competitive market.",
   },
   {
     number: "02",
     title: "Web Design",
-    image: "/assets/images/demo-brutalist/services/2.jpg",
+    image: serviceImage2,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis urna ligula. Nam convallis nunc in felis mattis, a sollicitudin ligula molestie. Donec tincidunt eu lorem eget varius. Vestibulum ac efficitur ante. Aenean accumsan, justo vel placerat fermentum, elit neque lobortis velit, a varius nibh lorem in tellus.",
+      "Our web design services focus on creating user-friendly, responsive, and aesthetically pleasing websites. We design with your brand’s identity in mind while ensuring seamless navigation and performance, ensuring a positive user experience on all devices.",
   },
   {
     number: "03",
     title: "Development",
-    image: "/assets/images/demo-brutalist/services/3.jpg",
+    image: serviceImage3,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis urna ligula. Nam convallis nunc in felis mattis, a sollicitudin ligula molestie. Donec tincidunt eu lorem eget varius. Vestibulum ac efficitur ante. Aenean accumsan, justo vel placerat fermentum, elit neque lobortis velit, a varius nibh lorem in tellus.",
+      "We offer end-to-end software development solutions, from concept to execution. Whether it's building custom applications, integrating systems, or optimizing performance, our development team uses the latest technologies to deliver high-quality, scalable solutions tailored to your business needs.",
   },
   {
     number: "04",
-    title: "Photography",
-    image: "/assets/images/demo-brutalist/services/4.jpg",
+    title: "Mobile App",
+    image: serviceImage4,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis urna ligula. Nam convallis nunc in felis mattis, a sollicitudin ligula molestie. Donec tincidunt eu lorem eget varius. Vestibulum ac efficitur ante. Aenean accumsan, justo vel placerat fermentum, elit neque lobortis velit, a varius nibh lorem in tellus.",
+      "We specialize in building intuitive, high-performance mobile apps for both iOS and Android platforms. Our mobile solutions are designed to engage users, streamline operations, and improve efficiency, with a focus on seamless integration and cutting-edge features.",
   },
 ];
+
 
 export const services2 = [
   {

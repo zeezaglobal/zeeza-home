@@ -199,7 +199,7 @@ export const brutalistOnepage = [
   { href: "#about", text: "About", dataBtnAnimate: "y" },
   { href: "#services", text: "Services", dataBtnAnimate: "y" },
   { href: "#portfolio", text: "Portfolio", dataBtnAnimate: "y" },
-  { href: "#blog", text: "Blog", dataBtnAnimate: "y" },
+
 ];
 export const boldMultipage = [
   { href: "/bold-multi-page", text: "Home", active: false },

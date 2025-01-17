@@ -66,19 +66,34 @@ export default function Hero1() {
       {/* End Scroll Down */}
       {/* Social Media Links */}
       <div className="hs-social wow fadeInUp" data-wow-offset={0}>
-        <a href="#" className="hs-social-link">
-          <div className="visually-hidden">Instagram</div>
-          <i className="fa-instagram" />
-        </a>
-        <a href="#" className="hs-social-link">
-          <div className="visually-hidden">Twitter</div>
-          <i className="fa-twitter" />
-        </a>
-        <a href="#" className="hs-social-link">
-          <div className="visually-hidden">Facebook</div>
-          <i className="fa-facebook-f" />
-        </a>
-      </div>
+  <a
+    href="https://www.instagram.com/zeeza.global?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    className="hs-social-link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div className="visually-hidden">Instagram</div>
+    <i className="fa-instagram" />
+  </a>
+  <a
+    href="https://www.linkedin.com/company/zeeza-winnipeg/"
+    className="hs-social-link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div className="visually-hidden">LinkedIn</div>
+    <i className="fa-linkedin" />
+  </a>
+  <a
+    href="https://www.facebook.com/profile.php?id=100076063342441"
+    className="hs-social-link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div className="visually-hidden">Facebook</div>
+    <i className="fa-facebook-f" />
+  </a>
+</div>
       {/* End Social Media Links */}
     </div>
   );

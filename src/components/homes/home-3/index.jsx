@@ -10,6 +10,10 @@ import { Link } from "react-router-dom";
 import ContactDark from "./ContactDark";
 
 import { qualities } from "../../../data/features";
+import sectionImage from "../../../assets/images/demo-brutalist/section-image-1.jpg";
+import sectionBg2 from "../../../assets/images/demo-brutalist/section-bg-2.jpg";
+
+
 
 import AnimatedText from "../../../components/common/AnimatedText";
 export default function Home3({ onePage = false, dark = false }) {
@@ -26,17 +30,16 @@ export default function Home3({ onePage = false, dark = false }) {
             <div className="col-sm-9">
               <h2 className="section-title-large font-alt uppercase mb-60 mb-md-50 mb-sm-30">
                 <span className="wow charsAnimInLong" data-splitting="chars">
-                  <AnimatedText text="About Studio" />
+                  <AnimatedText text="About Zeeza" />
                 </span>
               </h2>
               <p
                 className="section-descr-large mb-60 mb-sm-40 wow fadeInUp"
                 data-wow-delay="0.1s"
               >
-                Resonance is a full-service creative studio creating beautiful
-                digital experiences and products. We are an award winning studio
-                specializing in branding, design and engineering. Our mission is
-                to make work meaningful.
+               Zeeza Global helps businesses grow with custom websites and mobile apps designed to meet their unique needs. We focus on creating user-friendly, high-quality solutions that work smoothly and look great.
+
+With free demos, flexible pricing, and a satisfaction guarantee, we make it easy for businesses to bring their ideas to life. Whether you're just starting out or already established, we’re here to help you succeed with reliable and innovative solutions. Let’s create something amazing together!
               </p>
               <ul
                 className="section-features font-alt clearlist uppercase wow fadeInUp"
@@ -57,7 +60,7 @@ export default function Home3({ onePage = false, dark = false }) {
           >
             <div className="col-5 offset-7 col-sm-4 offset-sm-8">
               <img
-                src="/assets/images/demo-brutalist/section-image-1.jpg"
+                src={sectionImage}
                 width={689}
                 height={855}
                 className="section-image-1"
@@ -71,8 +74,7 @@ export default function Home3({ onePage = false, dark = false }) {
       <section
         className="page-section bg-dark-1 bg-dark-alpha-70 light-content bg-scroll pb-0 z-index-1"
         style={{
-          backgroundImage:
-            "url(/assets/images/demo-brutalist/section-bg-2.jpg)",
+          backgroundImage: `url(${sectionBg2})`,
         }}
       >
         <Banner />
