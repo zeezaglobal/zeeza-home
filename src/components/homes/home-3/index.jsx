@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import ContactDark from "./ContactDark";
 
 import { qualities } from "../../../data/features";
-import sectionImage from "../../../assets/images/demo-brutalist/section-image-1.jpg";
+import sectionImage from "../../../assets/images/demo-brutalist/section-image-1.png";
 import sectionBg2 from "../../../assets/images/demo-brutalist/section-bg-2.jpg";
 import sectionBg3 from "../../../assets/images/demo-brutalist/section-bg-3.jpg";
 import shape1 from "../../../assets/images/demo-brutalist/shape-1.svg"

@@ -1,7 +1,7 @@
 
 import AnimatedText from "../../../components/common/AnimatedText";
 import React from "react";
-import sectionImage from "../../../assets/images/demo-brutalist/section-image-2.jpg"
+import sectionImage from "../../../assets/images/demo-brutalist/section-image-2.png"
 
 export default function Banner() {
   return (
