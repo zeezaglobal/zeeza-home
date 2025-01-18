@@ -23,9 +23,7 @@ const Home = () => {
               style={{
                 backgroundImage: `url(${sectionBg})`, // Use the imported image
               }}
-           
-      
-              id="home"
+           id="home"
             >
               <Hero1 />
             </ParallaxContainer>
