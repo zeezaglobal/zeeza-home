@@ -26,6 +26,7 @@ const Home = () => {
            id="home"
             >
               <Hero1 />
+              
             </ParallaxContainer>
 
             <Home3 onePage />
