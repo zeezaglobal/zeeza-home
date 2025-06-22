@@ -8,6 +8,11 @@ import { parallaxMouseMovement, parallaxScroll } from "./utlis/parallax";
 import { init_wow } from "./utlis/initWowjs";
 import { headerChangeOnScroll } from "./utlis/changeHeaderOnScroll";
 
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-99WZD3J8YX"); // Replace with your Measurement ID
+
+ReactGA.send("pageview");
 
 function App() {
   return (
